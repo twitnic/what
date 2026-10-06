@@ -1,0 +1,1 @@
+@extends('layout') @section('content')<section class="auth-panel panel"><h1>Passwort vergessen?</h1><form method="post" action="{{ route('password.email') }}" class="form">@csrf<label>E-Mail<input type="email" name="email" required autocomplete="email"></label><button class="button" type="submit">Link anfordern</button></form></section>@endsection
