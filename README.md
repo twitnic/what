@@ -2,6 +2,8 @@
 
 Mandantenfähige Nachrichtenplattform für Vereine, Geschäfte und Stadtverwaltung. Laravel 13, PHP 8.4+, PostgreSQL; Blade-Oberfläche ohne Node-Build.
 
+Die Oberfläche verwendet lokal ausgelieferte variable Open-Sans-Schriften (normal und kursiv, Gewicht 300–800) aus dem [offiziellen Open-Sans-Repository](https://github.com/googlefonts/opensans). Schriftdateien und SIL-OFL-Lizenz liegen unter `public/fonts/open-sans`; beim Seitenaufruf werden keine externen Font-Dienste kontaktiert.
+
 Die Docker-Infrastruktur liegt in einem unabhängigen Repository außerhalb dieses Checkouts. Dieses Repository enthält ausschließlich Anwendung, Konfiguration, Tests und CI. Remote: `git@github.com:twitnic/what.git`.
 
 ## Installation ohne Docker
