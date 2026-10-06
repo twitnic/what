@@ -13,6 +13,8 @@ Route::get('/', [FeedController::class, 'index'])->name('feed');
 Route::get('/organisationen/{organization}', [FeedController::class, 'organization'])->name('organization.feed');
 Route::get('/veranstaltungen', [FeedController::class, 'calendar'])->name('calendar');
 Route::get('/feed.xml', [FeedController::class, 'rss'])->name('rss');
+Route::view('/impressum', 'legal.imprint')->name('imprint');
+Route::view('/datenschutz', 'legal.privacy')->name('privacy');
 Route::post('/beitraege/{post}/melden', [FeedController::class, 'report'])->middleware('throttle:5,1')->name('reports.store');
 Route::middleware('guest')->group(function (): void {
     Route::get('/login', [AuthController::class, 'loginForm'])->name('login');

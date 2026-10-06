@@ -89,3 +89,7 @@ php artisan test
 Psalm 6 Level 1 mit Laravel-Plugin und separatem Taint-Lauf. PHPStan/Larastan `max` mit Strict Rules. Analyse umfasst `app`, `routes`, `bootstrap/app.php`, `database` und `tests`; keine Baselines. Eine inkompatible Zusatzregel für statische Aufrufsyntax ist in `phpstan.neon` begründet. `declare(strict_types=1)` wird durch Pint erzwungen. CI nutzt PHP 8.4 und SQLite-In-Memory.
 
 Die Funktionsplanung und die Startanleitung für Docker stehen im separaten Infrastruktur-Repository.
+
+## Impressum und Datenschutz
+
+Die öffentlichen Seiten `/impressum` und `/datenschutz` sind auf allen HTML-Seiten im Footer verlinkt. Texte liegen in `resources/views/legal/imprint.blade.php` und `resources/views/legal/privacy.blade.php`. Die sichtbaren Platzhalter müssen vor einem öffentlichen Betrieb mit den tatsächlichen Betreiberangaben, Hosting- und E-Mail-Dienstleistern, Rechtsgrundlagen, Speicherfristen und der zuständigen Aufsichtsbehörde ersetzt werden. Die Datenschutzseite beschreibt die aktuell vorhandenen Anwendungsfunktionen; sie ist ein zu vervollständigender Entwurf.
